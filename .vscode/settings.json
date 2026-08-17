@@ -1,0 +1,12 @@
+{
+    "python.defaultInterpreterPath": "/Users/agatinopesce/src/PyDebugPS/.venv/bin/python",
+    "pylint.interpreter": [
+        "/Users/agatinopesce/src/PyDebugPS/.venv/bin/python"
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:venv",
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
