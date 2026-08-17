@@ -6,10 +6,10 @@ from phonebook import Phonebook
 def make_phonebook():
     phonebook = Phonebook()
     phonebook.add("Bob", "1234")
+    phonebook.add("Alice", "5678")
     return phonebook
 
 
-def test_poc(phonebook):
-    expected = "1234"
-    result = phonebook.lookup("Bob")
-    assert result == expected
+def test_poc(phonebook: Phonebook):
+    assert phonebook.lookup("Bob") =="1234"
+    assert phonebook.lookup("Alice") =="5678"
