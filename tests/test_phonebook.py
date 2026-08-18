@@ -4,10 +4,10 @@ from phonebook import Phonebook
 
 @pytest.fixture(name="phonebook")
 def make_phonebook():
-    phonebook = Phonebook()
-    phonebook.add("Bob", "1234")
-    phonebook.add("Alice", "5678")
-    return phonebook
+    return_value = Phonebook()
+    return_value.add("Bob", "1234")
+    return_value.add("Alice", "5678")
+    return return_value
 
 
 def test_poc(phonebook: Phonebook):
